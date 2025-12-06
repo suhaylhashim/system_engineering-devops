@@ -1,2 +1,2 @@
 #!/bin/bash
-/bin/echo -n "Best School" > "*\\\\'\\\"Best School\\\"'\\\\*\\\$\\?*****:" && /bin/echo -ne "\r\n\r\n\r\n" >> "*\\\\'\\\"Best School\\\"'\\\\*\\\$\\?*****:)"
+/bin/echo -ne "Best School\r\n\r\n\r\n" > "*\\\\'\\\"Best School\\\"'\\\\*\\\$\\?*****:)"
