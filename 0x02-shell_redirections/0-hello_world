@@ -1,2 +1,2 @@
-# Task 0: Hello World
+#!/bin/bash
 echo "Hello, World"
