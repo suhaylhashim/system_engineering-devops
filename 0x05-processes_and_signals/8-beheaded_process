@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 # This script kills 7-highlander with SIGKILL
-pid=$(pgrep -f "7-highlander")
-if [ -n "$pid" ]; then
-    kill -9 "$pid"
-fi
+pkill -9 -f "7-highlander"
 echo "OK"
