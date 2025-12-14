@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # This script kills 7-highlander with SIGKILL
-pid=$(pgrep -f "7-highlander")
+pid=$(ps aux | grep '[7]-highlander' | grep -v grep | head -1 | awk '{print $2}')
 if [ -n "$pid" ]; then
     kill -9 "$pid"
 fi
+echo "OK"
