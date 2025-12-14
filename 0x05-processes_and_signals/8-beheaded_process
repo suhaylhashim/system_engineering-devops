@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # This script kills 7-highlander with SIGKILL
-pid=$(ps aux | grep '[7]-highlander' | grep -v grep | head -1 | awk '{print $2}')
+# shellcheck disable=SC2009
+pid=$(pgrep -f "^bash.*7-highlander$")
 if [ -n "$pid" ]; then
     kill -9 "$pid"
 fi
